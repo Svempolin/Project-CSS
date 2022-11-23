@@ -28,22 +28,6 @@ header nav img {
   position: relative;
   border-radius: 50%;
 }
-header .nav-links {
-  flex: 1;
-  text-align: right;
-}
-header li {
-  display: inline-block;
-  list-style: none;
-  position: relative;
-  padding: 8px 20px;
-}
-header a {
-  text-decoration: none;
-  color: black;
-  font-family: "PT Serif", serif;
-  font-size: 20px;
-}
 header .text-box {
   display: flex;
   flex-direction: column;
@@ -63,6 +47,98 @@ header .shop-button {
   text-decoration: none;
   border-radius: 15%;
   margin: 20px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+}
+header .nav-link {
+  transition: 0.7s ease;
+}
+header .nav-link:hover {
+  color: rgb(206, 35, 35);
+}
+header .hamburger {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+header .bar {
+  display: block;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+header .hamburger.active .bar:ntn-child(2) {
+  opacity: 0;
+}
+header .hamburger.active .bar:ntn-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+header .hamburger.active .bar:ntn-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+header .nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
+  transition: 0.3s;
+}
+header .nav-item {
+  margin: 16px;
+  list-style: none;
+  color: #000;
+}
+header .nav-menu.active {
+  left: 0;
+  background-color: #d6ccc2;
+}
+@media (min-width: 768px) {
+  header li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    padding: 8px 20px;
+  }
+  header a {
+    text-decoration: none;
+    color: black;
+    font-family: "PT Serif", serif;
+    font-size: 20px;
+  }
+  header .navbar {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+  }
+  header .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+  header .nav-link {
+    transition: 0.7s ease;
+  }
+  header .nav-link:hover {
+    color: rgb(206, 35, 35);
+  }
+  header .hamburger {
+    display: none;
+  }
 }
 
 .history-slogan {

@@ -36,22 +36,11 @@ header {
     }
   }
 
-  .nav-links {
-    flex: 1;
-    text-align: right;
-  }
-  li {
-    display: inline-block;
-    list-style: none;
-    position: relative;
-    padding: 8px 20px;
-  }
-  a {
-    text-decoration: none;
-    color: black;
-    font-family: "PT Serif", serif;
-    font-size: 20px;
-  }
+  // .nav-links {
+  //   flex: 1;
+  //   text-align: right;
+  // }
+
   .text-box {
     display: flex;
     flex-direction: column;
@@ -74,7 +63,124 @@ header {
     border-radius: 15%;
     margin: 20px;
   }
+  a {text-decoration: none;
+    color: black;
+    font-family: "PT Serif", serif;
+    font-size: 20px;}
+
+  .nav-link {
+    transition: 0.7s ease;
+  }
+  
+  .nav-link:hover {
+    color: rgb(206, 35, 35);
+  }
+  .hamburger {
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+    background-size: cover;
+    position: relative;
+  }
+  .bar {
+    display: block;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+  
+  .hamburger.active .bar:ntn-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:ntn-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:ntn-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    // width: 100%;
+    text-align:center;
+    justify-content: flex-end;
+    transition: 0.3s;
+  }
+  .nav-item{
+    margin:16px;
+    list-style: none;
+    color: #000;
+  
+  }
+  .nav-menu.active{
+    left:0;
+    background-color:$secondarycolor ;
+  }
+
+  @media (min-width: 768px) {
+    li {
+      display: inline-block;
+      list-style: none;
+      position: relative;
+      padding: 8px 20px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      font-family: "PT Serif", serif;
+      font-size: 20px;
+    }
+    .navbar {
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 24px;
+    }
+
+    .nav-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 60px;
+    }
+
+    //funkar ej
+    .nav-link {
+      transition: 0.7s ease;
+    }
+
+    .nav-link:hover {
+      color: rgb(206, 35, 35);
+    }
+
+    .hamburger {
+      display: none;
+    }
+  }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+//funkar ej
+
 
 .history-slogan {
   display: flex;
