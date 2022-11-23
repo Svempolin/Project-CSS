@@ -66,4 +66,23 @@ header .shop-button {
   font-size: 18px;
   text-decoration: none;
   border-radius: 15%;
+}
+
+.history-slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 49px 24px;
+}
+.history-slogan .text-history-slogan {
+  font-family: "PT Serif", serif;
+  font-size: 1.2rem;
+}
+
+.card-holder {
+  display: flex;
+  flex: column;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
