@@ -1,5 +1,5 @@
-// #edede9
-// #d6ccc2
+$primarycolor: #edede9;
+$secondarycolor: #d6ccc2;
 // #f5ebe0
 // #e3d5ca
 // #d5bdaf
@@ -82,7 +82,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 49px 24px;
-  border: 1px solid rgb(226, 20, 55);
+  background-color: $primarycolor;
   .text-history-slogan {
     font-family: "PT Serif", serif;
     font-size: 1.2rem;
@@ -92,7 +92,7 @@ header {
 .card-holder {
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid rgb(79, 76, 76);
+
   .cards {
     display: flex;
     flex-wrap: wrap;
@@ -102,7 +102,6 @@ header {
   .card-items {
     display: flex;
     padding: 1rem;
-    border: 1px solid rgb(95, 209, 39);
 
     @media (min-width: 40rem) {
       width: 50%;
@@ -113,8 +112,7 @@ header {
   }
 
   .card {
-    background-color: white;
-    border: 1px solid green;
+    background-color: $primarycolor;
     border-radius: 0.25rem;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -123,7 +121,7 @@ header {
   }
   .card-content {
     padding: 1rem;
-    background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%);
+    background: $primarycolor;
   }
 
   .image-continer {
@@ -149,6 +147,62 @@ header {
     .card-holder {
       display: flex;
       flex-direction: row;
+    }
+  }
+}
+
+.parent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  .child-1 {
+    background-color: $primarycolor;
+    margin: 0;
+    padding: 0;
+
+    .child-wrapper {
+      display: flex;
+      padding: 1rem;
+
+      .card-child {
+        background-color: white;
+        border-radius: 0.25rem;
+        box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        @media (min-width: 768px) {
+          flex-direction: row;
+        }
+      }
+
+      .card-img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .child-cake-img {
+          width: auto;
+          max-width: 100%;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .child-2 {
+    background-color: $secondarycolor;
+    padding: 1rem;
+
+    .child-text {
+      margin: 0px 0px 5px 0px;
+      display: flex;
+      align-items: center;
+      padding: 10px;
     }
   }
 }

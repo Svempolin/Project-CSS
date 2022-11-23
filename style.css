@@ -71,7 +71,7 @@ header .shop-button {
   align-items: center;
   justify-content: center;
   padding: 49px 24px;
-  border: 1px solid rgb(226, 20, 55);
+  background-color: #edede9;
 }
 .history-slogan .text-history-slogan {
   font-family: "PT Serif", serif;
@@ -81,7 +81,6 @@ header .shop-button {
 .card-holder {
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid rgb(79, 76, 76);
 }
 .card-holder .cards {
   display: flex;
@@ -92,7 +91,6 @@ header .shop-button {
 .card-holder .card-items {
   display: flex;
   padding: 1rem;
-  border: 1px solid rgb(95, 209, 39);
 }
 @media (min-width: 40rem) {
   .card-holder .card-items {
@@ -105,8 +103,7 @@ header .shop-button {
   }
 }
 .card-holder .card {
-  background-color: white;
-  border: 1px solid green;
+  background-color: #edede9;
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -115,7 +112,7 @@ header .shop-button {
 }
 .card-holder .card-content {
   padding: 1rem;
-  background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%);
+  background: #edede9;
 }
 .card-holder .image-continer {
   width: 100%;
@@ -141,4 +138,56 @@ header .shop-button {
     display: flex;
     flex-direction: row;
   }
+}
+
+.parent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.parent .child-1 {
+  background-color: #edede9;
+  margin: 0;
+  padding: 0;
+}
+.parent .child-1 .child-wrapper {
+  display: flex;
+  padding: 1rem;
+}
+.parent .child-1 .child-wrapper .card-child {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .parent .child-1 .child-wrapper .card-child {
+    flex-direction: row;
+  }
+}
+.parent .child-1 .child-wrapper .card-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.parent .child-1 .child-wrapper .card-img .child-cake-img {
+  width: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.parent .child-2 {
+  background-color: #d6ccc2;
+  padding: 1rem;
+}
+.parent .child-2 .child-text {
+  margin: 0px 0px 5px 0px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
