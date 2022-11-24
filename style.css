@@ -23,7 +23,7 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
-header nav img {
+header img {
   width: 90px;
   position: relative;
   border-radius: 50%;
@@ -92,7 +92,7 @@ header .nav-menu {
   top: 70px;
   flex-direction: column;
   text-align: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   transition: 0.3s;
 }
 header .nav-item {
@@ -101,10 +101,13 @@ header .nav-item {
   color: #000;
 }
 header .nav-menu.active {
-  left: 0;
+  left: 70%;
   background-color: #d6ccc2;
 }
-@media (min-width: 768px) {
+header li :hover {
+  color: grey;
+}
+@media (min-width: 769px) {
   header li {
     display: inline-block;
     list-style: none;
@@ -118,19 +121,30 @@ header .nav-menu.active {
     font-size: 20px;
   }
   header .navbar {
-    height: 70px;
+    height: 20rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 24px;
   }
+  header h1 {
+    font-size: 6rem;
+  }
+  header img {
+    margin-top: 4rem;
+    width: 15rem;
+    position: relative;
+    border-radius: 50%;
+  }
   header .nav-menu {
-    display: flex;
+    top: 0;
+    left: auto;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    flex-direction: row;
   }
   header .nav-link {
+    font-size: 2rem;
     transition: 0.7s ease;
   }
   header .nav-link:hover {

@@ -4,6 +4,12 @@ $secondarycolor: #d6ccc2;
 // #e3d5ca
 // #d5bdaf
 
+@mixin hover {
+  :hover{
+    color:grey
+  }
+  
+}
 *,
 *::after,
 *::before {
@@ -29,11 +35,16 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    img {
-      width: 90px;
-      position: relative;
-      border-radius: 50%;
-    }
+    // img {
+    //   width: 90px;
+    //   position: relative;
+    //   border-radius: 50%;
+    // }
+  }
+  img {
+    width: 90px;
+    position: relative;
+    border-radius: 50%;
   }
 
   // .nav-links {
@@ -109,9 +120,9 @@ header {
     left: -100%;
     top: 70px;
     flex-direction: column;
-    // width: 100%;
+  
     text-align:center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     transition: 0.3s;
   }
   .nav-item{
@@ -121,11 +132,14 @@ header {
   
   }
   .nav-menu.active{
-    left:0;
+    left:70%;
     background-color:$secondarycolor ;
   }
+  li{
+    @include hover;
+  }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     li {
       display: inline-block;
       list-style: none;
@@ -139,22 +153,38 @@ header {
       font-size: 20px;
     }
     .navbar {
-      height: 70px;
+      height: 20rem;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       padding: 0 24px;
     }
+    h1{
+      font-size: 6rem;
+    }
+    
+      img {
+        margin-top:4rem;
+        width: 15rem;
+        position: relative;
+        border-radius: 50%;
+      }
+     
+    
+
+  
 
     .nav-menu {
-      display: flex;
+      top: 0;
+      left: auto;
       justify-content: space-between;
       align-items: center;
-      gap: 60px;
+      flex-direction: row;
     }
 
     //funkar ej
     .nav-link {
+      font-size: 2rem;
       transition: 0.7s ease;
     }
 
