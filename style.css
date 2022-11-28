@@ -23,7 +23,7 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
-header img {
+header .loggo {
   width: 90px;
   position: relative;
   border-radius: 50%;
@@ -77,13 +77,13 @@ header .bar {
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
-header .hamburger.active .bar:ntn-child(2) {
+header .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
-header .hamburger.active .bar:ntn-child(1) {
+header .hamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
-header .hamburger.active .bar:ntn-child(3) {
+header .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 header .nav-menu {
@@ -94,6 +94,7 @@ header .nav-menu {
   text-align: center;
   justify-content: flex-start;
   transition: 0.3s;
+  z-index: 1;
 }
 header .nav-item {
   margin: 16px;
@@ -218,9 +219,10 @@ header li :hover {
   position: relative;
 }
 .card-holder .cake-img {
-  width: auto;
-  max-width: 100%;
-  vertical-align: middle;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card-holder .cake-text {
   font-family: "PT Serif", serif;
@@ -300,7 +302,6 @@ header li :hover {
   font-family: "PT Serif", serif;
   font-size: 1rem;
   margin: 0px 0px 5px 0px;
-  display: flex;
   align-items: center;
   padding: 10px;
 }
@@ -408,4 +409,8 @@ header li :hover {
     flex-direction: row;
     border: 3px solid rgb(70, 10, 20);
   }
+}
+
+.fa-solid {
+  color: yellow;
 }/*# sourceMappingURL=style.css.map */
