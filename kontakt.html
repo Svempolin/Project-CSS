@@ -64,50 +64,64 @@
       <h2 class="text-history-slogan">KOM I KONTAKT </h2>
     </section>
 
-    <main class="card-holder">
+    
    
     
-          <div class="card-items">
-            <div class="card">
-              <div class="image-continer">
-                <img class="cake-img" src="assets/chokladkaka.jpg" alt="personal"/>
+         
+ 
+   
+    <main class="card-holder">
+    <div class="parent">
+        <div class="child-1">
+          <div class="child-wrapper">
+            <div class="card-child">
+              <div class="card-img">
+                <img
+                  class="child-cake-img"
+                  src="assets/chokladkaka.jpg"
+                  alt="kakbild"
+                />
               </div>
-              <div class="card-content">
+              <div class="child-2">
                 <form class=" contact form">
-                <div class="headline">
-                    <h3> Kontakta oss! </h3>
-                  <div class="form-content">
-                    <div class="input-group">
-                        <label for="firstName" class="input-label">Förnamn</label>
-                        <input type="text" />
+                    <div class="headline">
+                        <h3> Kontakta oss! </h3>
+                      <div class="form-content">
+                        <div class="input-group">
+                            <label for="firstName" class="input-label">Förnamn</label>
+                            <input type="text" id="firstName" class="label"name=""/>
+                        </div>
+                        <div class="input-group">
+                            <label for="lastName" class="input-label">Efternamn</label>
+                            <input type="text" id="lastName" class="label" name=""/>
+                        </div>
+                        <div class="input-group">
+                            <label for="email" class="input-label">Email</label>
+                            <input type="text" id="email" class="label" name=""/>
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <label for="firstName" class="input-label">Efternamn</label>
-                        <input type="text" />
-                    </div>
-                    <div class="input-group">
-                        <label for="email" class="input-label">Email</label>
-                        <input type="text" />
-                    </div>
-                </div>
-                    <input type="radio"><label>Beställ en tårta</label> 
-                    <br>
-                    <input type="radio"><label>Frågor om företaget</label> 
-                    <br>
-                    <input type="radio"><label>Feedback på webplats</label>
-                    <p><label for="w3review">Speciella önskemål:</label></p>
-                    <textarea id="w3review" name="w3review" rows="4" cols="40"></textarea>
-                    <br>
-                    <input type="submit" value="Submit">
-              
-                
-                </form>
+                        <label  for="radio" class="radio-label" >Beställ en tårta</label> 
+                        <input type="radio" id="radio" >
+                        <br>
+                        <label  for="radio" class="radio-label" >Frågor om företaget</label> 
+                        <input type="radio" id="radio" >
+                        <br>
+                        <label  for="radio" class="radio-label">Frågor om företaget/web</label> 
+                        <input type="radio" id="radio" class="radio-label" >
+                        <label for="review" class="radio-label">Speciella önskemål:</label>
+                        <textarea id="review" name="review" rows="4" cols="40"></textarea>
+                        <br>
+                        <input type="submit" value="Submit">
+                  
+                    
+                    </form>
+             
               </div>
             </div>
           </div>
- 
+        </div>
+      </div>
     </main>
-
     <footer class="footer">
         <div class="footer-wrapper">
           <!-- <div class="left-footer-wrapper"> -->
