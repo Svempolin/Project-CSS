@@ -359,7 +359,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   flex-flow: row wrap;
   padding: 50px;
   color: #fff;
@@ -381,21 +381,23 @@ header {
   .footer-left-content2 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
     // border: 3px solid rgb(192, 255, 217);
   }
 
   .footer-left {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     // border: 3px solid rgb(220, 192, 255);
+
+
   }
 
   img {
-    width: 45%;
+    width: 60%;
     border-radius: 50%;
     padding-bottom: 10px;
   }
@@ -403,26 +405,10 @@ header {
   p {
     padding-right: 20%;
     color: #999;
+    justify-content: center;
+    align-items: center;
   }
 
-  .socials {
-    display: flex;
-    display: flex;
-    margin-top: 25px;
-    // border: 3px solid rgb(231, 17, 91);
-  }
-
-  .socials a {
-    width: 40px;
-    height: 40px;
-    // display: inline-block;
-    margin-right: 10px;
-
-    i {
-      color: #999;
-      font-size: 20px;
-    }
-  }
 
   ul {
     list-style: none;
@@ -439,30 +425,28 @@ header {
 
   .footer-right {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 50px;
     // border: 3px solid rgb(31, 17, 20);
     flex-direction: column;
+
+    @media (min-width: 768px) {
+
+        display: flex;
+        flex-direction: row;
+        // border: 3px solid rgb(70, 10, 20);
+      }
   }
   //
   .box a {
     color: #999;
   }
-  .footer-bottom {
-    text-align: center;
-    color: #999;
-    padding-top: 20px;
-
-    .footer-wrapper {
-      display: flex;
-      flex-direction: row;
-      // border: 3px solid rgb(70, 10, 20);
-    }
-  }
+ 
   @media (min-width: 768px) {
     .footer-wrapper {
       display: flex;
       flex-direction: row;
-      border: 3px solid rgb(70, 10, 20);
+      // border: 3px solid rgb(70, 10, 20);
     }
   }
 }
