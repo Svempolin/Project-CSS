@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Nanum+Gothic&family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4a13996f1a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="Header">
+      <nav class="navbar">
+        <div class="img-box">
+          <a href="Index.html"><img class="loggo"src="assets/logo.png" alt="Logga" /></a>
+        </div>
+        <!-- <div class="nav-links"> -->
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">HEM</a>
+          </li>
+          <li class="nav-item">
+            <a href="produkter.html" class="nav-link">Produkter</a>
+          </li>
+          <li class="nav-item">
+            <a href="omoss.html" class="nav-link">Om oss</a>
+          </li>
+          <li class="nav-item">
+            <a href="kontakt.html" class="nav-link">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a href="referenser.html" class="nav-link">Referenser</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <!-- </div> -->
+      </nav>
+      <section class="text-box">
+        <h1 class="rubrik">PÂTISSERIE</h1>
+        <button class="shop-button">SHOP</button>
+      </section>
+    </header>
+
+    <section class="history-slogan">
+      <h2 class="text-history-slogan">KOM I KONTAKT </h2>
+    </section>
+
+    <main class="card-holder">
+   
+    
+          <div class="card-items">
+            <div class="card">
+              <div class="image-continer">
+                <img class="cake-img" src="assets/chokladkaka.jpg" alt="personal"/>
+              </div>
+              <div class="card-content">
+                <form class=" contact form">
+                <div class="headline">
+                    <h3> Kontakta oss! </h3>
+                  <div class="form-content">
+                    <div class="input-group">
+                        <label for="firstName" class="input-label">Förnamn</label>
+                        <input type="text" />
+                    </div>
+                    <div class="input-group">
+                        <label for="firstName" class="input-label">Efternamn</label>
+                        <input type="text" />
+                    </div>
+                    <div class="input-group">
+                        <label for="email" class="input-label">Email</label>
+                        <input type="text" />
+                    </div>
+                </div>
+                    <input type="radio"><label>Beställ en tårta</label> 
+                    <br>
+                    <input type="radio"><label>Frågor om företaget</label> 
+                    <br>
+                    <input type="radio"><label>Feedback på webplats</label>
+                    <p><label for="w3review">Speciella önskemål:</label></p>
+                    <textarea id="w3review" name="w3review" rows="4" cols="40"></textarea>
+                    <br>
+                    <input type="submit" value="Submit">
+              
+                
+                </form>
+              </div>
+            </div>
+          </div>
+ 
+    </main>
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <!-- <div class="left-footer-wrapper"> -->
+        <div class="footer-left">
+          <div class="footer-left-content1">
+            <img src="assets/logo.png" alt="logotype" />
+          </div>
+          <div class="footer-left-content2">
+            <div class="p-wrapper">
+              <p>Följ oss på våra sociala medier!</p>
+            </div>
+            <div class="social-wrapper">
+              <div class="socials">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="right-footer-wrapper"> -->
+
+        <div class="footer-right">
+          <div class="footer-right-content1">
+            <ul>
+              <li>
+                <h2>Företaget</h2>
+
+                <ul class="box">
+                  <li><a href="#">Produkter</a></li>
+                  <li><a href="#">Om oss</a></li>
+                  <li><a href="#">Kontakt</a></li>
+                  <li><a href="#">Referencer</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="footer-right-content2"> -->
+          <ul>
+            <li class="address">
+              <h2>Adress</h2>
+
+              <ul class="box">
+                <li><a href="#">Adress</a></li>
+                <li><a href="#">Telefon</a></li>
+                <li><a href="#">Mejl</a></li>
+                <li><a href="#">Fax</a></li>
+              </ul>
+              <!-- </div> -->
+            </li>
+          </ul>
+        </div>
+        <!-- </div> -->
+      </div>
+      <div class="bottom-footer-wrapper">
+        <div class="footer-bottom">
+          <p>All rights reserved by PÂTISSERIE &copy; 2022</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
