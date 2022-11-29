@@ -1,0 +1,13 @@
+@mixin shop-button($size) {
+    border: 1px solid #000;
+    padding: 12px 34px;
+    font-size: $size;
+    text-decoration: none;
+    border-radius: 15%;
+    margin: 20px;
+  }
+  
+  @mixin brödtext($size) {
+    font-family: "PT Serif", serif;
+    font-size: $size;
+  }
