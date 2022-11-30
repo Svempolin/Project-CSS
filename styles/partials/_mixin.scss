@@ -1,13 +1,60 @@
 @mixin shop-button($size) {
-    border: 1px solid #000;
+    border: 1px solid #fff;
     padding: 12px 34px;
     font-size: $size;
     text-decoration: none;
-    border-radius: 15%;
+    border-radius: 12px;
     margin: 20px;
+    cursor: pointer;
+    font-weight: 600;
+
+    a{
+      text-decoration: none;
+      color: white;
+      font-family: "PT Serif", serif;
+      font-size: 20px;
+    }
   }
   
   @mixin brödtext($size) {
-    font-family: "PT Serif", serif;
+    font-family: $secondarytext;
     font-size: $size;
   }
+
+  @mixin rubriker($size) {
+    font-family: "Unica One", cursive;
+    font-size: $size;
+  }
+
+  @mixin länkar($size){
+    font-family: "Unica One", cursive;
+    font-size: $size;
+    text-transform: uppercase;
+
+  }
+
+  @mixin hover-links {
+
+    &:hover {
+      color: $hover;
+      text-decoration: underline;
+      transition: 0.1s ease;
+    }
+
+  }
+  
+  @mixin hover-btn {
+    background-color: $btn;
+    color: #fff;
+    &:hover {
+      background-color: $hover;
+      color: #fff;
+    }
+  }
+
+@mixin flex($display, $direction, $align, $justify){
+    display:$display;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
